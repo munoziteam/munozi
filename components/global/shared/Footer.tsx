@@ -13,10 +13,10 @@ export default function Footer({}: Props) {
   const { user } = useGlobalStore();
   return (
     <div className=" flex justify-between items-center gap-4 p-4 bg-bg-bg">
-      <div className=" flex flex-col gap-2 items-center">
+      <Link href={"/"} className=" flex flex-col gap-2 items-center">
         <TbHomeFilled className=" text-black text-2xl" />
         <Text size={"subHeader"}>Home</Text>
-      </div>
+      </Link>
       <div className=" flex flex-col gap-2 items-center">
         <BiSolidCategory className=" text-black text-2xl" />
         <Text size={"subHeader"}>Category</Text>

@@ -1,3 +1,5 @@
+"use client";
+
 import Text from "@/components/ui/shared/Text";
 import Header from "./Header";
 import Section1 from "./section1/Section1";
