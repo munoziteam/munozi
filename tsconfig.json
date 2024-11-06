@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "infrastructure/reactQuery/utils/invalidation.js", "infrastructure/reactQuery/utils/withAutoInvalidation.js", "infrastructure/reactQuery/useDocument.js", "infrastructure/firebase/db.js", "infrastructure/zustand/findPlaceSlice.js", "infrastructure/zustand/store.js", "infrastructure/zustand/profileSlice.js", "infrastructure/zustand/modalSlice.js"],
+  "exclude": ["node_modules"]
+}
