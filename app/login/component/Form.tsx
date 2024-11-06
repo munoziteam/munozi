@@ -36,6 +36,7 @@ export default function Register({ setRoute }: { setRoute: any }) {
 
       const userId = await auth.sendEmailOtp(payload.email);
       localStorage.setItem("userId", userId);
+      localStorage.setItem("email", payload.email);
       setOnboardData(payload);
       setRoute("otp");
       reset();

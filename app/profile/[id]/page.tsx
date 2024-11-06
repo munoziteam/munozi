@@ -16,6 +16,7 @@ import COLLECTIONS from "@/infrastructure/models/collection";
 import SelectLanguage from "@/components/global/shared/SelectLanguage";
 import { FaBagShopping, FaCartShopping, FaPerson } from "react-icons/fa6";
 import Footer from "@/components/global/shared/Footer";
+import Logout from "@/components/global/shared/Logout";
 
 type Props = {
   params: any;
@@ -133,6 +134,7 @@ export default function Profile({ params: { id } }: Props) {
                 <Text size={"subHeader"}>Settings</Text>
               </Link>
             </div>
+            <Logout />
           </div>
         </div>
       </div>

@@ -14,7 +14,10 @@ type Props = {};
 export default function Otp({}: Props) {
   const [values, setValues] = useState();
   const router = useRouter();
-  const { setIsLoading, email } = useGlobalStore();
+  const { setIsLoading } = useGlobalStore();
+
+  const email = localStorage.getItem("email");
+
   const handle = async () => {
     try {
       setIsLoading(true);

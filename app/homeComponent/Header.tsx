@@ -27,7 +27,7 @@ export default function Header({}: Props) {
       {/* 3 */}
       <Link
         href={`/profile/${user?.$id}`}
-        className=" rounded-full min-w-[35px] min-h-[35px] bg-bg flex justify-center items-center cursor-pointer "
+        className="fullShadow border-2 rounded-full min-w-[35px] min-h-[35px] bg-bg flex justify-center items-center cursor-pointer "
       >
         <BsFillPersonFill className=" text-gray-300 text-xl" />
       </Link>
